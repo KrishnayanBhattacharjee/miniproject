@@ -108,8 +108,6 @@ function displayPets() {
                 <p><strong>Type:</strong> ${pet.type}</p>
                 <p><strong>Breed:</strong> ${pet.breed}</p>
                 <p><strong>Age:</strong> ${pet.age}</p>
-                <p><strong>Price:</strong> ${pet.price}</p>
-                <p><strong>Vaccinated:</strong> ${pet.vaccinated ? 'Yes' : 'No'}</p>
                 <button class="btn-primary" onclick="openAdoptionForm('${pet.name}', '${pet.breed}', ${pet.id})">Adopt ${pet.name}</button>
             </div>
         `;
@@ -335,3 +333,4 @@ document.addEventListener('click', function(e) {
         closeAdoptionForm();
     }
 });
+
