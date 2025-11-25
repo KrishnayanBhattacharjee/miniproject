@@ -43,7 +43,7 @@ const pets = [
         type: "Cat",
         breed: "Maine Coon",
         age: "4 years",
-        image: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        image: "https://images.unsplash.com/photo-1743835270077-f0cadfdea2a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhdCUyMGltYWdlfGVufDB8fDB8fHww"
     },
     {
         id: 5,
