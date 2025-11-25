@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts Pet Adoption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Paws & Hearts</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#adopt" class="nav-link">Adopt a Pet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#donate" class="nav-link">Donate a Pet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#volunteer" class="nav-link">Volunteer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your New Best Friend</h1>
+            <p>Every pet deserves a loving home. Browse our available pets and find your perfect match today.</p>
+            <a href="#adopt" class="btn-primary">View Pets</a>
+        </div>
+    </section>
+    <section id="adopt" class="section">
+        <div class="container">
+            <h2>Pets Available for Adoption</h2>
+            <div class="pet-grid" id="petGrid">
+                <!-- Pets will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    <section id="donate" class="section bg-light">
+        <div class="container">
+            <h2>Donate a Pet</h2>
+            <div class="donate-content">
+                <div class="donate-text">
+                    <p>If you need to rehome your pet, we're here to help. We provide a safe and caring environment for pets while we find them new forever homes.</p>
+                    <ul>
+                        <li>All pets receive medical checkups and necessary vaccinations</li>
+                        <li>We conduct behavioral assessments to ensure proper placement</li>
+                        <li>Our team works to match pets with the perfect families</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Contact Us About Donation</a>
+                </div>
+                <div class="donate-image">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Happy dog">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="volunteer" class="section">
+        <div class="container">
+            <h2>Volunteer With Us</h2>
+            <p>Join our team of dedicated volunteers and make a difference in the lives of animals.</p>
+            <div class="volunteer-options">
+                <div class="option-card">
+                    <h3>Animal Care</h3>
+                    <p>Help with feeding, grooming, and exercising our pets.</p>
+                </div>
+                <div class="option-card">
+                    <h3>Adoption Events</h3>
+                    <p>Assist with organizing and running adoption events.</p>
+                </div>
+                <div class="option-card">
+                    <h3>Administrative</h3>
+                    <p>Help with paperwork, calls, and other office tasks.</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn-primary">Become a Volunteer</a>
+        </div>
+    </section>
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2>About Paws & Hearts</h2>
+            <div class="about-content">
+                <p>Founded in 2025, Paws & Hearts has helped over 5,000 pets find their forever homes. Our mission is to rescue, rehabilitate, and rehome animals in need while promoting responsible pet ownership.</p>
+                <p>We believe every animal deserves love, care, and a safe home. Our dedicated team works tirelessly to ensure each pet receives the attention and medical care they need before being placed with a loving family.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><strong>Address:</strong> Agartala</p>
+                    <p><strong>Phone:</strong> 987654321</p>
+                    <p><strong>Email:</strong> krishnayan.dev@gmail.com</p>
+                    <p><strong>Hours:</strong> Monday - Saturday, 9am - 6pm</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Developed By Krishnayan Bhattacharjee, Pritam Banik, Akash Mandal, Nithin Nath, Gourab Nag.</p>
+            <p>&copy; 2025 Paws & Hearts Pet Adoption. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
