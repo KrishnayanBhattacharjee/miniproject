@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate a Pet - Paws & Hearts Pet Adoption</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Paws & Hearts</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#adopt" class="nav-link">Adopt a Pet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="donate-pet.html" class="nav-link">Donate a Pet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#volunteer" class="nav-link">Volunteer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="donation-hero">
+        <div class="container">
+            <h1>Donate a Pet</h1>
+            <p>If you need to rehome your pet, we're here to help. We provide a safe and caring environment while we find them a new forever home.</p>
+            <a href="#donation-form" class="btn-primary">Start Donation Process</a>
+        </div>
+    </section>
+
+    <section class="donation-process">
+        <div class="container">
+            <h2>Our Donation Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Form</h3>
+                    <p>Fill out our detailed pet donation form with information about your pet.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Initial Review</h3>
+                    <p>Our team will review your submission and contact you within 48 hours.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Meet & Greet</h3>
+                    <p>We'll schedule a meeting to assess your pet and discuss next steps.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Finalize Donation</h3>
+                    <p>Complete the donation process and we'll take your pet into our care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donation-form" class="donation-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Pet Donation Form</h2>
+                <p class="form-note">Please fill out this form as completely as possible. All fields marked with * are required.</p>
+                
+                <form id="petDonationForm">
+                    <!-- Donor Information Section -->
+                    <div class="form-section">
+                        <h3>Your Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pet Information Section -->
+                    <div class="form-section">
+                        <h3>Pet Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="petName">Pet's Name *</label>
+                                <input type="text" id="petName" name="petName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="petType">Type of Pet *</label>
+                                <select id="petType" name="petType" required>
+                                    <option value="">Select...</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="bird">Bird</option>
+                                    <option value="rabbit">Rabbit</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="breed">Breed *</label>
+                                <input type="text" id="breed" name="breed" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age *</label>
+                                <input type="text" id="age" name="age" placeholder="e.g., 2 years, 6 months" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="gender">Gender *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="unknown">Unknown</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="weight">Weight</label>
+                                <input type="text" id="weight" name="weight" placeholder="e.g., 15 lbs">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="color">Color/Markings</label>
+                                <input type="text" id="color" name="color">
+                            </div>
+                            <div class="form-group">
+                                <label for="spayedNeutered">Spayed/Neutered *</label>
+                                <select id="spayedNeutered" name="spayedNeutered" required>
+                                    <option value="">Select...</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                    <option value="unknown">Unknown</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Health Information Section -->
+                    <div class="form-section">
+                        <h3>Health Information</h3>
+                        <div class="form-group">
+                            <label for="vaccinations">Vaccinations Status *</label>
+                            <select id="vaccinations" name="vaccinations" required>
+                                <option value="">Select...</option>
+                                <option value="upToDate">Up to date</option>
+                                <option value="some">Some vaccinations</option>
+                                <option value="none">No vaccinations</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="medicalConditions">Medical Conditions or Special Needs</label>
+                            <textarea id="medicalConditions" name="medicalConditions" rows="3" placeholder="Describe any medical conditions, allergies, or special needs your pet has"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="currentMedications">Current Medications</label>
+                            <textarea id="currentMedications" name="currentMedications" rows="2" placeholder="List any medications your pet is currently taking"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="vetInfo">Veterinarian Information (if available)</label>
+                            <textarea id="vetInfo" name="vetInfo" rows="2" placeholder="Vet name, clinic, and contact information"></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Behavior Information Section -->
+                    <div class="form-section">
+                        <h3>Behavior & Temperament</h3>
+                        <div class="form-group">
+                            <label for="personality">Personality Description *</label>
+                            <textarea id="personality" name="personality" rows="3" required placeholder="Describe your pet's personality, energy level, likes, dislikes, etc."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>How does your pet get along with:</label>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="children">Children</label>
+                                    <select id="children" name="children">
+                                        <option value="">Select...</option>
+                                        <option value="excellent">Excellent</option>
+                                        <option value="good">Good</option>
+                                        <option value="fair">Fair</option>
+                                        <option value="poor">Poor</option>
+                                        <option value="unknown">Unknown</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="otherDogs">Other Dogs</label>
+                                    <select id="otherDogs" name="otherDogs">
+                                        <option value="">Select...</option>
+                                        <option value="excellent">Excellent</option>
+                                        <option value="good">Good</option>
+                                        <option value="fair">Fair</option>
+                                        <option value="poor">Poor</option>
+                                        <option value="unknown">Unknown</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="otherCats">Other Cats</label>
+                                    <select id="otherCats" name="otherCats">
+                                        <option value="">Select...</option>
+                                        <option value="excellent">Excellent</option>
+                                        <option value="good">Good</option>
+                                        <option value="fair">Fair</option>
+                                        <option value="poor">Poor</option>
+                                        <option value="unknown">Unknown</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="training">Training & Commands</label>
+                            <textarea id="training" name="training" rows="2" placeholder="What commands does your pet know? Any training they've received?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="behaviorIssues">Behavioral Issues or Concerns</label>
+                            <textarea id="behaviorIssues" name="behaviorIssues" rows="2" placeholder="Any behavioral problems like separation anxiety, chewing, barking, etc."></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Reason for Donation Section -->
+                    <div class="form-section">
+                        <h3>Reason for Donation</h3>
+                        <div class="form-group">
+                            <label for="donationReason">Why are you donating your pet? *</label>
+                            <textarea id="donationReason" name="donationReason" rows="3" required placeholder="Please be as detailed as possible about why you need to rehome your pet"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="ownershipLength">How long have you owned this pet? *</label>
+                            <input type="text" id="ownershipLength" name="ownershipLength" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Information Section -->
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="diet">Diet & Feeding Schedule</label>
+                            <textarea id="diet" name="diet" rows="2" placeholder="What does your pet eat and when? Any dietary restrictions?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="routine">Daily Routine</label>
+                            <textarea id="routine" name="routine" rows="2" placeholder="Describe your pet's typical daily routine"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="favoriteActivities">Favorite Activities & Toys</label>
+                            <textarea id="favoriteActivities" name="favoriteActivities" rows="2" placeholder="What does your pet enjoy doing? Favorite toys?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Any Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Anything else we should know about your pet?"></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Agreement Section -->
+                    <div class="form-section">
+                        <h3>Agreement</h3>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="truthfulness" name="truthfulness" required>
+                            <label for="truthfulness">I certify that the information provided in this form is true and accurate to the best of my knowledge. *</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="understanding" name="understanding" required>
+                            <label for="understanding">I understand that submitting this form does not guarantee acceptance of my pet into the Paws & Hearts program, and that all decisions are made based on the best interest of the animal and our organization's capacity. *</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="contact" name="contact" required>
+                            <label for="contact">I agree to be contacted by Paws & Hearts regarding my pet donation request. *</label>
+                        </div>
+                        <p class="form-note">We will contact you within 48 hours of receiving your submission. If your situation is urgent, please call us at 987654321.</p>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Donation Form</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Developed By Krishnayan Bhattacharjee, Pritam Banik, Akash Mandal, Nithin Nath, Gourab Nag.</p>
+            <p>&copy; 2025 Paws & Hearts Pet Adoption. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Form submission
+        document.getElementById('petDonationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const petName = document.getElementById('petName').value;
+            const fullName = document.getElementById('fullName').value;
+            
+            // Show confirmation message
+            alert(`Thank you, ${fullName}! Your donation request for ${petName} has been submitted. We will contact you within 48 hours to discuss next steps.`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
